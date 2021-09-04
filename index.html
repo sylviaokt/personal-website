@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+        <!--==================== AOS ====================-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!--==================== ANIMATE ====================-->
+        <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+       />
+        <title>Sylvia's Website</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+          <nav class="nav container">
+            <a href="#" class="nav__logo">Sylvia</a>
+            <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list grid">
+                <li class="nav__item">
+                  <a href="#home" class="nav__link active-link">
+                    <i class="uil uil-estate nav__icon"></i> Home
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="#about" class="nav__link">
+                    <i class="uil uil-user nav__icon"></i> About
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="#portfolio" class="nav__link">
+                    <i class="uil uil-scenery nav__icon"></i> Portfolio
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="#experience" class="nav__link">
+                    <i class="uil uil-scenery nav__icon"></i> Experience
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="#skills" class="nav__link">
+                    <i class="uil uil-robot nav__icon"></i> Skills
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="#contact" class="nav__link">
+                    <i class="uil uil-message nav__icon"></i> Contact
+                  </a>
+                </li>
+              </ul>
+              <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__btns">
+              <div class="nav__toggle" id="nav-toggle">
+                <i class="uil uil-apps"></i>
+              </div>
+
+            </div>
+          </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+              <div class="home__container container grid">
+                <div class="home__content grid">
+                  <div class="home__social">
+                    <a href="https://www.linkedin.com/in/sylvia-ong-13b479140/" target="_blank" class="home__social-icon">
+                      <i class="uil uil-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/sylviaokt" target="_blank" class="home__social-icon">
+                      <i class="uil uil-github-alt"></i>
+                    </a>
+                    <a href="mailto:e0424865@u.nus.edu" target="_blank" class="home__social-icon">
+                      <i class="uil uil-envelope"></i>
+                    </a>
+                  </div>
+                  <div class="home__img">
+                    <img width="300px" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyLjAwMyA1MTIuMDAzIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIuMDAzIDUxMi4wMDM7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIHN0eWxlPSJmaWxsOiNGN0Q4OEI7IiBkPSJNNDE2LjQyNiwzMTEuMTE0bDY0Ljg0Ny00NC4zMjJjNy41OTMtNS4xOSw3LjU5My0xNi4zOSwwLTIxLjU3OWwtNjQuODQ3LTQ0LjMyMg0KCWMtNi4yNzYtNC4yOS05LjQyMi0xMS44ODQtOC4wMTctMTkuMzU1bDE0LjUxMy03Ny4xOTRjMS42OTktOS4wMzgtNi4yMjEtMTYuOTU4LTE1LjI1OS0xNS4yNTlsLTc3LjE5NCwxNC41MTMNCgljLTcuNDcxLDEuNDA1LTE1LjA2Ni0xLjc0MS0xOS4zNTUtOC4wMTdMMjY2Ljc5MSwzMC43M2MtNS4xODktNy41OTMtMTYuMzktNy41OTMtMjEuNTc5LDBMMjAwLjg5LDk1LjU3Nw0KCWMtNC4yOSw2LjI3Ni0xMS44ODQsOS40MjItMTkuMzU1LDguMDE3TDEwNC4zNCw4OS4wODFjLTkuMDM5LTEuNjk5LTE2Ljk1OCw2LjIyLTE1LjI1OSwxNS4yNTlsMTQuNTEzLDc3LjE5NA0KCWMxLjQwNSw3LjQ3MS0xLjc0MSwxNS4wNjYtOC4wMTcsMTkuMzU1TDMwLjczLDI0NS4yMWMtNy41OTMsNS4xOS03LjU5MywxNi4zOSwwLDIxLjU3OWw2NC44NDcsNDQuMzIyDQoJYzYuMjc2LDQuMjksOS40MjIsMTEuODg0LDguMDE3LDE5LjM1NWwtMTQuNTEzLDc3LjE5NmMtMS42OTksOS4wMzgsNi4yMjEsMTYuOTU4LDE1LjI1OSwxNS4yNTlsNzcuMTk0LTE0LjUxMw0KCWM3LjQ3MS0xLjQwNSwxNS4wNjYsMS43NDEsMTkuMzU1LDguMDE3bDQ0LjMyMiw2NC44NDdjNS4xODksNy41OTMsMTYuMzksNy41OTMsMjEuNTc5LDBsNDQuMzIyLTY0Ljg0Nw0KCWM0LjI5LTYuMjc2LDExLjg4NC05LjQyMiwxOS4zNTUtOC4wMTdsNzcuMTk0LDE0LjUxM2M5LjAzOCwxLjY5OSwxNi45NTgtNi4yMjEsMTUuMjU5LTE1LjI1OWwtMTQuNTEzLTc3LjE5NQ0KCUM0MDcuMDA0LDMyMi45OTgsNDEwLjE1LDMxNS40MDMsNDE2LjQyNiwzMTEuMTE0eiIvPg0KPGNpcmNsZSBzdHlsZT0iZmlsbDojRjQ5RTczOyIgY3g9IjI2MC4zMjEiIGN5PSIyNTYuMDAxIiByPSIxNDAuNDUiLz4NCjxnPg0KCTxwYXRoIHN0eWxlPSJmaWxsOiNFRjkwNjc7IiBkPSJNMjU2LjAwMiwzOTYuNDQ3YzMwLjA2MSwwLDU3LjkxMi05LjQ0OSw4MC43NTYtMjUuNTMzDQoJCWMtMTUyLjY4LTIzLjE1NS0xNjYuNTU0LTIwMC4wMDktOTIuNjIxLTI1NC44NTRjLTcyLjAxMiw2LjAyNS0xMjguNTgxLDY2LjM3My0xMjguNTgxLDEzOS45NDINCgkJQzExNS41NTYsMzMzLjU2NywxNzguNDM2LDM5Ni40NDcsMjU2LjAwMiwzOTYuNDQ3eiIvPg0KCTxwYXRoIHN0eWxlPSJmaWxsOiNFRjkwNjc7IiBkPSJNMzQwLjQ1NCw2OC45NTZjLTIuMTQ5LDAtNC4zMzQtMC40MTQtNi40NDMtMS4yODdjLTguNTk4LTMuNTYyLTEyLjY4Mi0xMy40Mi05LjEyMS0yMi4wMTkNCgkJbDE0LjU5OC0zNS4yNDFjMy41NjEtOC41OTksMTMuNDIyLTEyLjY4MSwyMi4wMTktOS4xMjFjOC41OTgsMy41NjIsMTIuNjgyLDEzLjQyLDkuMTIxLDIyLjAxOUwzNTYuMDMsNTguNTQ4DQoJCUMzNTMuMzQyLDY1LjAzOCwzNDcuMDY2LDY4Ljk1NiwzNDAuNDU0LDY4Ljk1NnoiLz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojRUY5MDY3OyIgZD0iTTQ5NS4xMzksMzcxLjkxNGMtMi4xNDksMC00LjMzNC0wLjQxNC02LjQ0My0xLjI4N2wtMzUuMjQyLTE0LjU5OA0KCQljLTguNTk4LTMuNTYyLTEyLjY4Mi0xMy40Mi05LjEyMS0yMi4wMTlzMTMuNDIxLTEyLjY4MSwyMi4wMTktOS4xMjFsMzUuMjQyLDE0LjU5OGM4LjU5OCwzLjU2MiwxMi42ODIsMTMuNDIsOS4xMjEsMjIuMDE5DQoJCUM1MDguMDI3LDM2Ny45OTcsNTAxLjc1MSwzNzEuOTE0LDQ5NS4xMzksMzcxLjkxNHoiLz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojRUY5MDY3OyIgZD0iTTUyLjA5MywxODguMzk4Yy0yLjE0OSwwLTQuMzM0LTAuNDE0LTYuNDQzLTEuMjg3bC0zNS4yNDItMTQuNTk4DQoJCWMtOC41OTgtMy41NjItMTIuNjgyLTEzLjQyLTkuMTIxLTIyLjAxOXMxMy40MjEtMTIuNjgyLDIyLjAxOS05LjEyMWwzNS4yNDIsMTQuNTk4YzguNTk4LDMuNTYyLDEyLjY4MiwxMy40Miw5LjEyMSwyMi4wMTkNCgkJQzY0Ljk4MSwxODQuNDgsNTguNzA1LDE4OC4zOTgsNTIuMDkzLDE4OC4zOTh6Ii8+DQoJPHBhdGggc3R5bGU9ImZpbGw6I0VGOTA2NzsiIGQ9Ik0xNTYuOTM5LDUxMi4wMDFjLTIuMTQ5LDAtNC4zMzQtMC40MTQtNi40NDItMS4yODdjLTguNTk4LTMuNTYyLTEyLjY4Mi0xMy40Mi05LjEyMS0yMi4wMTkNCgkJbDE0LjU5OC0zNS4yNDFjMy41NjEtOC41OTksMTMuNDIxLTEyLjY4MSwyMi4wMTktOS4xMjFjOC41OTgsMy41NjIsMTIuNjgyLDEzLjQyLDkuMTIxLDIyLjAxOWwtMTQuNTk4LDM1LjI0MQ0KCQlDMTY5LjgyNyw1MDguMDg0LDE2My41NTEsNTEyLjAwMSwxNTYuOTM5LDUxMi4wMDF6Ii8+DQoJPHBhdGggc3R5bGU9ImZpbGw6I0VGOTA2NzsiIGQ9Ik0xNzEuNTQ5LDY4Ljk1NmMtNi42MTQsMC0xMi44ODctMy45MTctMTUuNTc2LTEwLjQwOGwtMTQuNTk4LTM1LjI0MQ0KCQljLTMuNTYxLTguNTk4LDAuNTIyLTE4LjQ1Nyw5LjEyMS0yMi4wMTljOC41OTgtMy41NTksMTguNDU3LDAuNTIyLDIyLjAxOSw5LjEyMWwxNC41OTgsMzUuMjQxDQoJCWMzLjU2MSw4LjU5OC0wLjUyMiwxOC40NTctOS4xMjEsMjIuMDE5QzE3NS44ODMsNjguNTQyLDE3My42OTksNjguOTU2LDE3MS41NDksNjguOTU2eiIvPg0KCTxwYXRoIHN0eWxlPSJmaWxsOiNFRjkwNjc7IiBkPSJNMTYuODY0LDM3MS45MTRjLTYuNjE0LDAtMTIuODg4LTMuOTE3LTE1LjU3Ni0xMC40MDhjLTMuNTYxLTguNTk5LDAuNTIyLTE4LjQ1Nyw5LjEyMS0yMi4wMTkNCgkJbDM1LjI0Mi0xNC41OThjOC41OTctMy41NjEsMTguNDU3LDAuNTIxLDIyLjAxOSw5LjEyMWMzLjU2MSw4LjU5OS0wLjUyMiwxOC40NTctOS4xMjEsMjIuMDE5bC0zNS4yNDIsMTQuNTk4DQoJCUMyMS4xOTgsMzcxLjUwMSwxOS4wMTQsMzcxLjkxNCwxNi44NjQsMzcxLjkxNHoiLz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojRUY5MDY3OyIgZD0iTTQ1OS45MSwxODguMzk4Yy02LjYxNCwwLTEyLjg4OC0zLjkxNy0xNS41NzYtMTAuNDA4Yy0zLjU2MS04LjU5OSwwLjUyMi0xOC40NTcsOS4xMjEtMjIuMDE5DQoJCWwzNS4yNDItMTQuNTk4YzguNTk4LTMuNTYsMTguNDU3LDAuNTIxLDIyLjAxOSw5LjEyMWMzLjU2MSw4LjU5OS0wLjUyMiwxOC40NTctOS4xMjEsMjIuMDE5bC0zNS4yNDIsMTQuNTk4DQoJCUM0NjQuMjQ0LDE4Ny45ODYsNDYyLjA2LDE4OC4zOTgsNDU5LjkxLDE4OC4zOTh6Ii8+DQoJPHBhdGggc3R5bGU9ImZpbGw6I0VGOTA2NzsiIGQ9Ik0zNTUuMDY0LDUxMi4wMDFjLTYuNjE0LDAtMTIuODg4LTMuOTE3LTE1LjU3Ni0xMC40MDhsLTE0LjU5OC0zNS4yNDENCgkJYy0zLjU2MS04LjU5OCwwLjUyMi0xOC40NTcsOS4xMjEtMjIuMDE5YzguNTk3LTMuNTU5LDE4LjQ1NiwwLjUyMiwyMi4wMTksOS4xMjFsMTQuNTk4LDM1LjI0MQ0KCQljMy41NjEsOC41OTgtMC41MjIsMTguNDU3LTkuMTIxLDIyLjAxOUMzNTkuMzk4LDUxMS41ODgsMzU3LjIxNCw1MTIuMDAxLDM1NS4wNjQsNTEyLjAwMXoiLz4NCjwvZz4NCjxnPg0KCTxlbGxpcHNlIHN0eWxlPSJmaWxsOiNGMjcyODE7IiBjeD0iMjE3LjM1MSIgY3k9IjIyNi40MyIgcng9IjIzLjQ4IiByeT0iMTguNjk4Ii8+DQoJPGVsbGlwc2Ugc3R5bGU9ImZpbGw6I0YyNzI4MTsiIGN4PSIzNDQuNjIxIiBjeT0iMjI2LjQzIiByeD0iMjMuNDgiIHJ5PSIxOC42OTgiLz4NCjwvZz4NCjxnPg0KCTxwYXRoIHN0eWxlPSJmaWxsOiM0NjRENTk7IiBkPSJNMjMxLjA0LDIxNS4yODFjLTQuMTQzLDAtNy41LTMuMzU4LTcuNS03LjV2LTguMjkxYzAtNC4xNDIsMy4zNTctNy41LDcuNS03LjVzNy41LDMuMzU4LDcuNSw3LjUNCgkJdjguMjkxQzIzOC41NCwyMTEuOTIzLDIzNS4xODIsMjE1LjI4MSwyMzEuMDQsMjE1LjI4MXoiLz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojNDY0RDU5OyIgZD0iTTMzMC45NDEsMjE1LjI4MWMtNC4xNDMsMC03LjUtMy4zNTgtNy41LTcuNXYtOC4yOTFjMC00LjE0MiwzLjM1Ny03LjUsNy41LTcuNQ0KCQljNC4xNDIsMCw3LjUsMy4zNTgsNy41LDcuNXY4LjI5MUMzMzguNDQxLDIxMS45MjMsMzM1LjA4NCwyMTUuMjgxLDMzMC45NDEsMjE1LjI4MXoiLz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojNDY0RDU5OyIgZD0iTTI4MC45OTEsMjIxLjY0OGMtNy4yMTYsMC0xNC4wNzYtMy4xMjQtMTguODI0LTguNTcyYy0yLjcyMi0zLjEyMy0yLjM5Ni03Ljg2LDAuNzI3LTEwLjU4Mg0KCQljMy4xMjItMi43MjEsNy44Ni0yLjM5NiwxMC41ODIsMC43MjdjMS44OTgsMi4xNzgsNC42MzgsMy40MjcsNy41MTYsMy40MjdzNS42MTctMS4yNDksNy41MTUtMy40MjcNCgkJYzIuNzIyLTMuMTIzLDcuNDU3LTMuNDQ4LDEwLjU4Mi0wLjcyN2MzLjEyMiwyLjcyMiwzLjQ0OCw3LjQ1OSwwLjcyNywxMC41ODJDMjk1LjA2NiwyMTguNTIzLDI4OC4yMDYsMjIxLjY0OCwyODAuOTkxLDIyMS42NDh6Ii8+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==" />
+                  </div>
+                  <div class="home__data">
+                    <h1 class="home__title">
+                      <span>H</span><span>i</span><span>,</span>
+                      <span>I</span><span>'</span><span>m</span>
+                      <span>S</span><span>y</span><span>l</span><span>v</span><span>i</span><span>a</span>
+                    </h1>
+                    <h3 class="home__subtitle">Aspiring fullstack developer</h3>
+                    <p class="home__description">Penultimate Computer Science undergraduate at NUS</p>
+                    <a href="#portfolio" class="button button--flex">
+                      My Projects <i class="uil uil-laptop button__icon"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="home__scroll">
+                  <a href="#about" class="home__scroll-button button--flex">
+                    <!-- <i class="uil uil-mouse-alt home__scoll-mouse"></i> -->
+                    <span class="home__scroll-name">Scroll</span>
+                    <i class="uil uil-angle-down home__scroll-arrow"></i>
+                  </a>
+                </div>
+
+              </div>
+            </section>
+
+            <b class="hr anim"></b>
+            <!--==================== ABOUT ====================-->
+            <section class="about section dark__background" id="about">
+              <h2 data-aos="fade-up" class="section__title">
+                <span>A</span><span>b</span><span>o</span><span>u</span><span>t</span>
+                <span>M</span><span>e</span>
+              </h2>
+              <span data-aos="fade-up" class="section__subtitle">My Introduction</span>
+
+
+              <div class="about__container container grid">
+                <img data-aos="fade-right" src="assets/img/profile.JPG" alt="" class="about__img">
+                <div data-aos="fade-left" class="about__data">
+                  <div class="about__description">
+                    <p> I absolutely love doing fullstack development and
+                    building applications with beautiful interfaces that provide a seamless
+                    experience for users.</p>
+                    <br>
+                    <p>I am also extremely lucky that I'm be able translate my passion
+                      into my career and I can't wait to embark on more projects
+                      to enhance my skills as a developer!</p>
+                    </div>
+                  <div class="about__buttons">
+                    <a href="assets/pdf/Sylvia_Resume.pdf" class="button button--flex">
+                    Resume  <i class="uil uil-file-download button_icon"></i>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+
+            </section>
+
+            <b class="hr anim"></b>
+            <!--==================== PORTFOLIO ====================-->
+            <section class="portfolio section" id="portfolio">
+              <h2 data-aos="fade-up" class="section__title">
+                <span>P</span><span>o</span><span>r</span><span>t</span><span>f</span><span>o</span><span>l</span><span>i</span><span>o</span>
+              </h2>
+              <span data-aos="fade-up" class="section__subtitle">My projects</span>
+              <div class="portfolio__container container grid">
+                <!--==================== PORTFOLIO PROJ 1 ====================-->
+                <div data-aos="fade-up-right" class="portfolio__content grid">
+                  <div class="portfolio__data">
+                    <img width="350px" height="auto" class="portfolio__img" src="assets/img/sponsee-second.png" alt="">
+                    <div class="overlay">
+                      <div class="portfolio__description">
+                        I built a cross-platform mobile application from scratch
+                        using React Native, NodeJS, Express and Firebase along
+                        with other fellow interns at Sponsee. We went through the
+                        entire SDLC process, from giving our inputs about how the
+                        UI/UX could be improved, to coming up with wireframes
+                        using Figma, deciding on the architecture and design
+                        of the mobile app implementation, documenting, to finally implementing
+                        the frontend and backend of the mobile app. This was probably
+                        the most fruitful experience I have had yet.
+                        I have learnt so much in these 3 months, and I would
+                        definitely do it all over again! The app is launching soon
+                        in the play store and apple store.
+                      </div>
+                      <h3 class="portfolio__name">Sponsee Mobile App</h3>
+                    </div>
+                  </div>
+                  <div class="portfolio__footer">
+
+                    <div class="portfolio__techstack">
+                      <span>
+                        #React Native
+                      </span>
+                      <span>
+                        #NodeJS
+                      </span>
+                      <span>
+                        #Express
+                      </span>
+                      <span>
+                        #Firebase
+                      </span>
+                    </div>
+
+                    <div class="portfolio__links">
+                      <a class="portfolio__link button button--flex" href="https://www.sponsee.io/app" target="_blank">Web</a>
+                      <!-- <a class="portfolio__link button button--flex" href="#">Demo</a> -->
+                    </div>
+                  </div>
+                </div>
+
+                <!--==================== PORTFOLIO PROJ 2 ====================-->
+                <div data-aos="fade-up-left" class="portfolio__content grid">
+                  <div class="portfolio__data">
+                    <img class="portfolio__img" src="assets/img/portfolio-logo.png" alt="">
+                    <div class="overlay grid">
+                      <div class="portfolio__description">
+                      This website is the first website I made and I had alot of
+                      fun playing with various combinations of colors and designs!
+                      Since this is my first time, there are many areas
+                      that I can work on to further improve on this webpage so I
+                      will be updating this webpage very soon! I am also planning to make
+                      use of other frameworks such as Bootstrap and ReactJS to
+                          incorporate more features and to improve on the user
+                          interface and design of this website.
+                      </div>
+                      <h3 class="portfolio__name">Personal Portfolio</h3>
+                    </div>
+                  </div>
+                  <div class="portfolio__footer">
+
+                    <div class="portfolio__techstack">
+                      <span>
+                        #HTML
+                      </span>
+                      <span>
+                        #CSS
+                      </span>
+                      <span>
+                        #JS
+                      </span>
+                    </div>
+
+                    <div class="portfolio__links">
+                      <a class="portfolio__link button button--flex" href="" target="_blank">Repo</a>
+                    </div>
+                  </div>
+                </div>
+                <!--==================== PORTFOLIO PROJ 3 ====================-->
+                <div data-aos="fade-right" class="portfolio__content grid">
+                  <div class="portfolio__data">
+                    <img width="180px" class="portfolio__img" src="assets/img/track.png" alt="">
+                    <div class="overlay grid">
+                      <div class="portfolio__description">
+                      This is a cross-platform mobile application that is made
+                      using React Native and MongoDB. This application allows
+                      users to track their jogging paths and save the route that
+                      they have ran or walked by. This app also offers
+                      authentication services where users can signup/login.
+                      I made this app during my spare time while I was attending
+                      an online course about React Native and MongoDB. I was
+                      more focused on the implementation of the logic of the app,
+                      and I have yet to polish the UI/UX design, which is something
+                      I am aiming to finish soon.
+                      </div>
+                      <h3 class="portfolio__name">Track App</h3>
+                    </div>
+                  </div>
+                  <div class="portfolio__footer">
+
+                    <div class="portfolio__techstack">
+                      <span>
+                        #React Native
+                      </span>
+                      <span>
+                        #MongoDB
+                      </span>
+                    </div>
+
+                    <div class="portfolio__links">
+                      <a class="portfolio__link button button--flex" href="https://github.com/sylviaokt/tracker" target="_blank">Repo</a>
+                      <a class="portfolio__link button button--flex" href="https://github.com/sylviaokt/tracker-server"  target="_blank">Repo</a>
+                    </div>
+                  </div>
+                </div>
+                <!--==================== PORTFOLIO PROJ 4 ====================-->
+                <div data-aos="fade-right" class="portfolio__content grid">
+                  <div class="portfolio__data">
+                    <img class="portfolio__img" src="assets/img/tutorspet-logo.png" alt="">
+                    <div class="overlay grid">
+                      <div class="portfolio__description">
+                      TutorsPet is a desktop application designed for private tutors in
+                      Singapore to manage students’ information. TutorsPet helps
+                      improve the efficiency and effectiveness of student management
+                      by categorising relevant contact information and keeping
+                      track of both lesson schedules and important dates.
+                      <br>
+                      <br>
+                      Through this project, I learnt how to do proper documentation and
+                      how to write different types of test cases to minimize bugs. I also learnt to make use of Github features such
+                      as Issues, Pull requests, Actions to facilitate the integration
+                      and management of the code.
+                      </div>
+                      <h3 class="portfolio__name">TutorsPet</h3>
+                    </div>
+                  </div>
+                  <div class="portfolio__footer">
+
+                    <div class="portfolio__techstack">
+                      <span>
+                        #Java
+                      </span>
+                      <span>
+                        #JavaFX
+                      </span>
+                      <span>
+                        #Gradle
+                      </span>
+                    </div>
+
+                    <div class="portfolio__links">
+                      <a class="portfolio__link button button--flex" href="https://github.com/AY2021S2-CS2103T-T11-3/tp" target="_blank">Repo</a>
+                      <a class="portfolio__link button button--flex" href="https://github.com/AY2021S2-CS2103T-T11-3/tp/releases/download/v1.4/tutorspet.jar">Demo</a>
+                      <a class="portfolio__link button button--flex" href="https://ay2021s2-cs2103t-t11-3.github.io/tp/UserGuide.html" target="_blank">Docs</a>
+                    </div>
+                  </div>
+                </div>
+                <!--==================== PORTFOLIO PROJ 5 ====================-->
+                <!-- <div data-aos="fade-left" class="portfolio__content grid">
+                  <div class="portfolio__data">
+                    <img class="portfolio__img" src="assets/img/portfolio-logo.png" alt="">
+                    <div class="overlay grid">
+                      <div class="portfolio__description">
+                      Bob is a desktop application primarily meant for managing a list of
+                      tasks, optimized for use via a CLI while still having the
+                      benefits of a GUI. Bob also enables users to set reminders
+                      on specific tasks.
+                      <br>
+                      <br>
+                      This is a project I completed in school, under the module
+                      CS2103T Software Engineering.
+                      </div>
+                      <h3 class="portfolio__name">Bob ChatBot</h3>
+                    </div>
+                  </div>
+                  <div class="portfolio__footer">
+
+                    <div class="portfolio__techstack">
+                      <span>
+                        #Java
+                      </span>
+                      <span>
+                        #JavaFX
+                      </span>
+                      <span>
+                        #Gradle
+                      </span>
+                    </div>
+
+                    <div class="portfolio__links">
+                      <a class="portfolio__link button button--flex" href="https://github.com/sylviaokt/Bob-ChatBot" target="_blank">Repo</a>
+                      <a class="portfolio__link button button--flex" href="https://github.com/sylviaokt/Bob-ChatBot/releases/download/A-Release/Bob-v1.0.jar">Demo</a>
+                      <a class="portfolio__link button button--flex" href="https://sylviaokt.github.io/Bob-ChatBot/" target="_blank">Docs</a>
+
+                    </div>
+                  </div>
+                </div> -->
+
+                <!--==================== PORTFOLIO PROJ 6 ====================-->
+                <div data-aos="fade-left" class="portfolio__content grid">
+                  <div class="portfolio__data">
+                    <img class="portfolio__img" src="assets/img/escape-logo.png" alt="">
+                    <div class="overlay grid">
+                      <div class="portfolio__description">
+                      This is an immersive story-driven game that has a high
+                      replay value made from Unity Engine. This is a survival game,
+                      where players are challenged to be creative in the ways they stay
+                      alive while they navigate this sci-fi landscape.
+                      <br>
+                      <br>
+                      I made this game with my friend for Orbital, a summer
+                      project in NUS. It was my first time dabbling in game
+                      development, and I learnt alot from it while I also
+                      enjoyed developing the game.
+                      </div>
+                      <h3 class="portfolio__name">Escape Game</h3>
+                    </div>
+                  </div>
+                  <div class="portfolio__footer">
+
+                    <div class="portfolio__techstack">
+                      <span>
+                        #Unity
+                      </span>
+                      <span>
+                        #C#
+                      </span>
+                    </div>
+
+                    <div class="portfolio__links">
+                      <!-- <a class="portfolio__link button button--flex" href="https://github.com/AY2021S2-CS2103T-T11-3/tp" target="_blank">Repo</a> -->
+                      <a class="portfolio__link button button--flex" href="https://drive.google.com/file/d/1zDBlYsgLz2j-gZXpU80eivTr5Dv4dgDu/view?usp=sharing"  target="_blank">Demo</a>
+                      <a class="portfolio__link button button--flex" href="https://drive.google.com/file/d/15QzY7UwDVY94G8bDmPTiWdgzlOGE47Ie/view" target="_blank">Video</a>
+
+                    </div>
+                  </div>
+                </div>
+
+            </section>
+
+            <b class="hr anim"></b>
+            <!--==================== QUALIFICATION ====================-->
+            <section class="qualification section dark__background" id="experience">
+              <h2 data-aos="fade-up" class="section__title">
+                <span>E</span><span>x</span><span>p</span><span>e</span><span>r</span><span>i</span><span>e</span><span>n</span><span>c</span><span>e</span>
+              </h2>
+              <span data-aos="fade-up" class="section__subtitle">My Personal Journey</span>
+              <div class="qualification__container container">
+                <div class="qualification__tabs">
+
+                  <div data-aos="fade-right" class="qualification__button button--flex qualification__active" data-target="#work">
+                    <i class="uil uil-briefcase-alt qualification__icon"></i>
+                    Experience
+                  </div>
+
+                  <div data-aos="fade-left" class="qualification__button button--flex" data-target="#education">
+                    <i class="uil uil-graduation-cap qualification__icon"></i>
+                    Education
+                  </div>
+
+
+                </div>
+
+                <div class="qualification__sections">
+                  <!--==================== QUALIFICATION CONTENT 1 ====================-->
+                  <div class="qualification__content qualification__active" data-content id="work">
+                    <!--==================== QUALIFICATION 1 ====================-->
+                    <div class="qualification__data">
+                        <div data-aos="fade-up">
+                          <h3 class="qualification__title">Fullstack Developer</h3>
+                          <span class="qualification__subtitle">Sustaining Employability of Low-income Women and Families (SELF)</span>
+                          <div class="qualification__calendar">
+                            <i class="uil uil-calendar-alt"></i>
+                            Sept 2021 - Present
+                          </div>
+                        </div>
+
+                        <div data-aos="fade-up">
+                          <span class="qualification__rounder"></span>
+                          <span class="qualification__line"></span>
+                        </div>
+                      </div>
+                    <!--==================== QUALIFICATION 2 ====================-->
+                    <div data-aos="fade-up" class="qualification__data">
+                        <div></div>
+                        <div>
+                          <span class="qualification__rounder"></span>
+                        </div>
+
+                        <div>
+                          <h3 class="qualification__title">Fullstack Software Engineer Intern</h3>
+                          <span class="qualification__subtitle">Sponsee Pte Ltd</span>
+                          <div class="qualification__calendar">
+                            <i class="uil uil-calendar-alt"></i>
+                            May - Aug 2021
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+
+                  <!--==================== QUALIFICATION CONTENT 2 ====================-->
+                  <div class="qualification__content" data-content id="education">
+                    <!--==================== QUALIFICATION 1 ====================-->
+                    <div class="qualification__data">
+                        <div data-aos="fade-up">
+                          <h3 class="qualification__title">National University of Singapore</h3>
+                          <span class="qualification__subtitle">Bachelor of Computing in Computer Science</span>
+                          <div class="qualification__calendar">
+                            <i class="uil uil-calendar-alt"></i>
+                            2019 - 2023
+                          </div>
+                        </div>
+
+                        <div>
+                          <span class="qualification__rounder"></span>
+                          <span class="qualification__line"></span>
+                        </div>
+                      </div>
+                    <!--==================== QUALIFICATION 2 ====================-->
+                    <div class="qualification__data">
+                        <div></div>
+                        <div>
+                          <span class="qualification__rounder"></span>
+                          <span class="qualification__line"></span>
+                        </div>
+
+                        <div data-aos="fade-left">
+                          <h3 class="qualification__title">Nanyang Junior College</h3>
+                          <span class="qualification__subtitle">GCE A Levels</span>
+                          <div class="qualification__calendar">
+                            <i class="uil uil-calendar-alt"></i>
+                            2017 - 2018
+                          </div>
+                        </div>
+                      </div>
+                    <!--==================== QUALIFICATION 3 ====================-->
+                    <div class="qualification__data">
+                        <div>
+                          <h3 class="qualification__title">Cedar Girls' Secondary School</h3>
+                          <span class="qualification__subtitle">GCE O Levels</span>
+                          <div class="qualification__calendar">
+                            <i class="uil uil-calendar-alt"></i>
+                            2013 - 2016
+                          </div>
+                        </div>
+
+                        <div>
+                          <span class="qualification__rounder"></span>
+                        </div>
+                      </div>
+
+                  </div>
+                </div>
+
+              </div>
+
+            </section>
+
+            <!--==================== SERVICES ====================-->
+            <!-- <section class="services section" id="services">
+
+            </section> -->
+
+            <b class="hr anim"></b>
+            <!--==================== SKILLS ====================-->
+            <section class="skills section" id="skills">
+              <h2 data-aos="fade-up" class="section__title">
+                <span>S</span><span>k</span><span>i</span><span>l</span><span>l</span><span>s</span>
+              </h2>
+              <span  data-aos="fade-up" class="section__subtitle skills__category">Frontend</span>
+              <div data-aos="fade-up" class="skills__container container grid">
+                <ul class="skills__list grid">
+                  <li class="skills__item">
+                    <img class="skills__icon" src="assets/img/html-logo.png" alt="">
+                      <div class="skills__name">
+                        HTML
+                      </div>
+                  </li>
+
+                  <li class="skills__item">
+                    <img class="skills__icon" src="assets/img/css-logo.png" alt="">
+                      <div class="skills__name">
+                        CSS
+                      </div>
+                  </li>
+
+                  <li class="skills__item">
+                    <img class="skills__icon" src="assets/img/react-logo.png" alt="">
+                      <div class="skills__name">
+                        React
+                      </div>
+                  </li>
+
+                  <li class="skills__item">
+                    <img class="skills__icon" src="assets/img/react-logo.png" alt="">
+                      <div class="skills__name">
+                        React Native
+                      </div>
+                  </li>
+                </ul>
+                <!-- <span data-aos="zoom-in" class="skills__line"></span> -->
+              </div>
+
+              <span data-aos="fade-up" class="section__subtitle skills__category">Backend</span>
+              <div data-aos="fade-up" class="skills__container container grid">
+                <ul class="skills__list backend__skills grid">
+                  <li class="skills__item">
+                    <img class="skills__icon" src="assets/img/nodejs-logo.png" alt="">
+                    <div class="skills__name">
+                        NodeJS
+                    </div>
+                  </li>
+
+                  <li class="skills__item">
+                    <img class="skills__icon" src="assets/img/express-logo.png" alt="">
+                      <div class="skills__name">
+                        Express
+                      </div>
+                  </li>
+
+                  <li class="skills__item">
+                    <img class="skills__icon" src="assets/img/firebase-logo.png" alt="">
+                      <div class="skills__name">
+                        Firebase
+                      </div>
+                  </li>
+
+                  <li class="skills__item">
+                    <img class="skills__icon" src="assets/img/mongodb-logo.png" alt="">
+                      <div class="skills__name">
+                        MongoDB
+                      </div>
+                  </li>
+
+                  <li class="skills__item">
+                    <img class="skills__icon" src="assets/img/postgresql-logo.png" alt="">
+                      <div class="skills__name">
+                        PostgreSQL
+                      </div>
+                  </li>
+                </ul>
+                <!-- <span data-aos="zoom-in" class="skills__line"></span> -->
+              </div>
+
+              <span data-aos="fade-up" data-aos="fade-up" class="section__subtitle skills__category">Languages</span>
+              <div data-aos="fade-up" class="skills__container container grid">
+                  <ul class="skills__list grid">
+                    <li class="skills__item">
+                      <img class="skills__icon" src="assets/img/js-logo.png" alt="">
+                        <div class="skills__name">
+                          JavaScript
+                        </div>
+                    </li>
+                    <li class="skills__item">
+                      <img class="skills__icon" src="assets/img/java-logo.png" alt="">
+                        <div class="skills__name">
+                          Java
+                        </div>
+                    </li>
+
+                    <li class="skills__item">
+                      <img class="skills__icon" src="assets/img/python-logo.png" alt="">
+                        <div class="skills__name">
+                          Python
+                        </div>
+                    </li>
+
+                    <li class="skills__item">
+                      <img class="skills__icon" src="assets/img/c-logo.png" alt="">
+                        <div class="skills__name">
+                          C
+                        </div>
+                    </li>
+                  </ul>
+
+              </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+          <div class="footer__bg">
+            <div class="footer__container container grid">
+              <div>
+                <h1 class="footer__title">Sylvia</h1>
+                <span class="footer__subtitle">Fullstack developer</span>
+              </div>
+
+              <div class="footer__socials">
+                <a href="https://www.linkedin.com/in/sylvia-ong-13b479140/" target="_blank" class="footer__social">
+                  <i class="uil uil-linkedin"></i>
+                </a>
+                <a href="https://github.com/sylviaokt" target="_blank" class="footer__social">
+                  <i class="uil uil-github-alt"></i>
+                </a>
+                <a href="mailto:e0424865@u.nus.edu" target="_blank" class="footer__social">
+                  <i class="uil uil-envelope"></i>
+                </a>
+              </div>
+            </div>
+            <p class="footer__copy">By Sylvia.</p>
+            <div>Icons made by
+              <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik
+              </a> from
+              <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com
+              </a>
+            </div>
+          </div>
+
+        </footer>
+
+        <!--==================== SCROLL TOP ====================-->
+        <a href="#" class="scrollup" id="scroll-up">
+          <i class="uil uil-angle-up scrollup__icon"></i>
+        </a>
+
+        <!--==================== AOS ====================-->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+          <script>
+            AOS.init({
+              easing: 'ease-in-quad'
+            });
+          </script>
+        <!--==================== MAIN JS ====================-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
